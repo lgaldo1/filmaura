@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0d0d0f;
+  font-family: system-ui, sans-serif;
+  color: #f0eee8;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.6rem 0.9rem;
+  background: #16161a;
+  border: 0.5px solid #2a2a30;
+  border-radius: 8px;
+  color: #f0eee8;
+  font-size: 0.9rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background: #f0eee8;
+  color: #0d0d0f;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+#status {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+  min-height: 1.2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.film-card {
+  background: #16161a;
+  border: 0.5px solid #2a2a30;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+  background: #1e1e24;
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+.film-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+.film-meta {
+  font-size: 0.75rem;
+  color: #666;
+}
